@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHéroes</title>
+    <link rel="stylesheet" href="estiloexamen.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Los SuperHéroes</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="index2.html">Ver Superheroes</a></li>
+                <li><a href="paginafinal.html">Agradecimientos</a></li>
+                <li><a href="climaapi.html">clima</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#cita">Cita</a></li>
+                <li><a href="#tabla">Tabla</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </aside>
+
+
+        <section class="content">
+            <article id="introduccion">
+                <h2>Los superheroes de nuestra cultura </h2>
+                <p>Los superheroes han marcado gran parte de nuestra sociedad cultural y social. Está desde el
+                    superheroe
+                    con complejo de ego, hasta el superheroe humilde que siempre retrata y recalca que es humilde.</p>
+            </article>
+
+            <article id="listas">
+                <h2>Ejemplos</h2>
+                <p>Alguno de los ejemplos de superheroes son: </p>
+                <ul>
+                    <li>Iron Man</li>
+                    <li>Capitan América</li>
+                    <li>Batman</li>
+                    <li>Superman</li>
+                    <li>Entre otros.</li>
+                </ul>
+
+            </article>
+
+            <article id="cita">
+                <h2>Frases Famosas dentro del mundo de los superheroes</h2>
+                <blockquote>
+                    "Un gran poder conlleva una gran responsabilidad." Tío Ben
+                </blockquote>
+            </article>
+
+            <article id="tabla">
+                <h2>Estadísticas</h2>
+                <p>Algunas de las Estádisticas de los superheroes más famosos son : </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Fans</th>
+                            <th>Interpretado por</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Iron Man</td>
+                            <td>816 mil seguidores</td>
+                            <td>Robert Downey Jr.</td>
+                        </tr>
+                        <tr>
+                            <td>Batman</td>
+                            <td>+1,000,000 Fans</td>
+                            <td>Robert Patinson, Chrsitian Bale, Michael Kiton, entre otros</td>
+                        </tr>
+                        <tr>
+                            <td>Superman</td>
+                            <td>+2,000,000 de fans</td>
+                            <td>Henry Cavill, Christopher Reeve, entre otros</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <h1>Calificaciones de Estudiantes</h1>
+            <form id="formulario">
+                <label for="parcial1">Primer Parcial (30%):</label>
+                <input type="number" id="parcial1" min="0" max="10" required>
+                <br>
+
+                <label for="parcial2">Segundo Parcial (30%):</label>
+                <input type="number" id="parcial2" min="0" max="10" required>
+                <br>
+
+                <label for="parcial3">Tercer Parcial (40%):</label>
+                <input type="number" id="parcial3" min="0" max="10" required>
+                <br>
+
+                <button type="button" onclick="calcularPromedio()">Calcular Promedio</button>
+            </form>
+
+            <div id="resultado"></div>
+
+        </section>
+    </div>
+
+    <header>
+        <h1>Plano</h1>
+    </header>
+    <form>
+        <label for="coordX">X</label>
+        <input type="number" id="coordX"><br>
+
+        <label for="coordY">Y</label>
+        <input type="number" id="coordY"><br>
+
+        <button type="button" onclick="determinarCuadrante()">Cuadrante</button>
+    </form>
+    <p id="resultado2"></p>
+
+</body>
+
+</html>

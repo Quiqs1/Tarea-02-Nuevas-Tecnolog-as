@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué superheore eres?</title>
+    <link rel="stylesheet" href="estiloexamen.css">
+    <link rel="stylesheet" href="stylesEdad.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="index.html">Lectura</a></li>
+                <li><a href="paginafinal.html">Agradecimientos</a></li>
+                <li><a href="climaapi.html">clima</a></li>
+
+            </ul>
+        </nav>
+        <h1>Alguno de los Superheroes son: </h1>
+        <li><img src="ironman.jpg" alt="imagenIronMan" width="400px" height="400px"></li>
+        <li><img src="capitan.jpg" alt="imagenCapitanAmerica" width="400px" height="400px"></li>
+        <li><img src="batman.jpg" alt="imagenBatMan" width="400px" height="400px"></li>
+    </header>
+    <div class="main-container">
+        <section class="content">
+            <article id="introduction">
+                <div class="container">
+                    <h1>¿Eres mayor de edad?</h1>
+                    <input type="number" id="edad" placeholder="Ingresa tu edad" min="0" max="150">
+                    <button type="submit" id="botonAceptar">Revisar</button>
+                    <p id="resultado"></p>
+                    <img id="imagen" src="blackwidow.jpg" width="900px" height="1000px" alt="Imagen de mayor de edad"
+                        style="display: none;">
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="javasexamen.js"></script>
+
+    <footer>
+        Superheroes
+    </footer>
+</body>
+
+</html>
